@@ -8,13 +8,101 @@ export const metadata: Metadata = {
   description:
     "Layanan perbaikan WC mampet, pipa tersumbat, got mampet, dan grease trap di Bandung. Profesional, cepat, tanpa bongkar, dan bergaransi.",
   alternates: {
-    canonical: "/layanan",
+    canonical: "https://perbaikansaluranmampet.com/layanan",
   },
 };
 
 export default function LayananPage() {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://perbaikansaluranmampet.com/layanan",
+    name: "Jasa Saluran Mampet Bandung",
+    url: "https://perbaikansaluranmampet.com/layanan",
+    telephone: "+6285119500054",
+    image: "https://perbaikansaluranmampet.com/logo.png",
+    description:
+      "Layanan perbaikan WC mampet, pipa tersumbat, got mampet dan grease trap di Bandung. Profesional, cepat dan tanpa bongkar.",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Bandung",
+      addressCountry: "ID",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Bandung",
+    },
+    serviceOffered: [
+      {
+        "@type": "Service",
+        name: "Perbaikan WC Mampet",
+        areaServed: "Bandung",
+      },
+      {
+        "@type": "Service",
+        name: "Pipa Tersumbat",
+        areaServed: "Bandung",
+      },
+      {
+        "@type": "Service",
+        name: "Got dan Saluran Air Hujan",
+        areaServed: "Bandung",
+      },
+      {
+        "@type": "Service",
+        name: "Grease Trap Restoran",
+        areaServed: "Bandung",
+      },
+    ],
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Apakah bisa tanpa bongkar lantai?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sebagian besar kasus saluran mampet dapat ditangani tanpa bongkar menggunakan mesin spiral profesional.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apakah melayani seluruh Bandung?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ya, layanan tersedia untuk seluruh wilayah Bandung dan sekitarnya.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apakah tersedia layanan darurat?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tersedia layanan darurat 24 jam untuk kondisi mendesak.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      {/* STRUCTURED DATA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
+
       <Navbar />
 
       {/* HERO */}

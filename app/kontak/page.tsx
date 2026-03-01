@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -8,13 +7,79 @@ export const metadata: Metadata = {
   description:
     "Hubungi jasa saluran mampet di Bandung. Alamat lengkap, nomor WhatsApp, dan lokasi Google Maps tersedia di halaman ini.",
   alternates: {
-    canonical: "/kontak",
+    canonical: "https://perbaikansaluranmampet.com/kontak",
   },
 };
 
 export default function KontakPage() {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Kontak Jasa Saluran Mampet Bandung",
+    url: "https://perbaikansaluranmampet.com/kontak",
+    mainEntity: {
+      "@type": "LocalBusiness",
+      "@id": "https://perbaikansaluranmampet.com",
+      name: "Perbaikan Saluran Mampet Bandung",
+      url: "https://perbaikansaluranmampet.com",
+      telephone: "+6285119500054",
+      image: "https://perbaikansaluranmampet.com/logo.png",
+      priceRange: "$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "Jl. Baladewa No.114, Pamoyanan, Kec. Cicendo",
+        addressLocality: "Bandung",
+        addressRegion: "Jawa Barat",
+        postalCode: "40173",
+        addressCountry: "ID",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: "-6.914744",
+        longitude: "107.609810",
+      },
+      areaServed: {
+        "@type": "City",
+        name: "Bandung",
+      },
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+6285119500054",
+        contactType: "customer service",
+        areaServed: "Bandung",
+        availableLanguage: ["Indonesian"],
+      },
+      sameAs: [
+        "https://www.google.com/maps?q=Jl.%20Baladewa%20No.114,%20Pamoyanan,%20Kec.%20Cicendo,%20Bandung"
+      ],
+    },
+  };
+
   return (
     <>
+      {/* STRUCTURED DATA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(contactSchema),
+        }}
+      />
+
       <Navbar />
 
       {/* HERO */}
@@ -102,35 +167,6 @@ export default function KontakPage() {
       </main>
 
       <Footer />
-
-      {/* CONTACT PAGE SCHEMA */}
-      <Script
-        id="contact-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ContactPage",
-            name: "Kontak Jasa Saluran Mampet Bandung",
-            url: "https://perbaikansaluranmampet.com/kontak",
-            mainEntity: {
-              "@type": "LocalBusiness",
-              name: "Perbaikan Saluran Mampet Bandung",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress:
-                  "Jl. Baladewa No.114, Pamoyanan, Kec. Cicendo",
-                addressLocality: "Bandung",
-                addressRegion: "Jawa Barat",
-                postalCode: "40173",
-                addressCountry: "ID",
-              },
-              telephone: "085119500054",
-              areaServed: "Bandung",
-            },
-          }),
-        }}
-      />
     </>
   );
 }
