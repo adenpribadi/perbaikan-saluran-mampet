@@ -6,6 +6,40 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative bg-[#0b0816] text-white py-16 lg:py-24 overflow-hidden font-sans">
+      {/* 🟢 SEO SCHEMA (LocalBusiness) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Medina Jaya Teknik - Perbaikan Saluran Mampet Bandung",
+            "image": "/hero.png",
+            "telelphone": "085119500054",
+            "url": "https://perbaikansaluranmampet.com",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Jl. Baladewa No.114",
+              "addressLocality": "Bandung",
+              "postalCode": "40173",
+              "addressCountry": "ID"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": -6.9175,
+              "longitude": 107.6191
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "00:00",
+              "closes": "23:59"
+            }
+          })
+        }}
+      />
+
       {/* Background Orbs */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-600/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4"></div>
