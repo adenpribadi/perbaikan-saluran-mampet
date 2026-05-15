@@ -35,6 +35,40 @@ export default function Hero() {
               "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
               "opens": "00:00",
               "closes": "23:59"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Layanan Perbaikan Saluran",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Jasa WC Mampet Bandung"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Jasa Wastafel Mampet"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Jasa Pipa Air Kotor"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Sedot Lemak Restoran (Grease Trap)"
+                  }
+                }
+              ]
             }
           })
         }}
@@ -56,11 +90,11 @@ export default function Hero() {
 
             <div className="space-y-5">
               <h1 className="text-4xl lg:text-6xl font-black leading-tight tracking-tighter">
-                Saluran Mampet? <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">Tuntas Sekarang!</span>
+                Jasa Saluran <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">Mampet Bandung</span>
               </h1>
               <p className="text-base lg:text-lg text-gray-400 max-w-lg leading-relaxed font-medium">
-                Solusi profesional mengatasi WC mampet, wastafel tersumbat, dan saluran pipa lainnya. Pengerjaan cepat, tanpa bongkar, dan bergaransi resmi.
+                Solusi ahli mengatasi <strong>WC mampet</strong>, wastafel tersumbat, dan saluran pipa air kotor di Bandung. Pengerjaan cepat, <strong>tanpa bongkar</strong>, dan bergaransi resmi.
               </p>
             </div>
 
