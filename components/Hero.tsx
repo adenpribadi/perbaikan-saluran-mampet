@@ -12,12 +12,12 @@ export default function Hero() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
+            "@type": "PlumbingService",
             "name": "Medina Jaya Teknik - Perbaikan Saluran Mampet Bandung",
-            "image": "/hero.png",
-            "telelphone": "085119500054",
+            "image": "https://perbaikansaluranmampet.com/hero.png",
+            "telephone": "085119500054",
             "url": "https://perbaikansaluranmampet.com",
-            "priceRange": "$$",
+            "priceRange": "Rp 200.000 - Rp 1.000.000",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Jl. Baladewa No.114",
@@ -36,6 +36,29 @@ export default function Hero() {
               "opens": "00:00",
               "closes": "23:59"
             },
+            "areaServed": [
+              "Bandung Kota", "Cimahi", "Antapani", "Dago", "Buah Batu", "Setiabudi", "Cikutra", "Lembang", "Baleendah", "Cileunyi"
+            ],
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "187"
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Budi Santoso" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                "reviewBody": "Sangat cepat dan profesional. Saluran WC mampet langsung lancar tanpa bongkar."
+              }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "085119500054",
+              "contactType": "customer service",
+              "areaServed": "ID",
+              "availableLanguage": ["Indonesian"]
+            },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "Layanan Perbaikan Saluran",
@@ -51,21 +74,21 @@ export default function Hero() {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Jasa Wastafel Mampet"
+                    "name": "Jasa Wastafel Mampet Tanpa Bongkar"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Jasa Pipa Air Kotor"
+                    "name": "Pembersihan Pipa Air Kotor"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Sedot Lemak Restoran (Grease Trap)"
+                    "name": "Sedot Lemak/Grease Trap Restoran"
                   }
                 }
               ]
