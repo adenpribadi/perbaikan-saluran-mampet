@@ -63,7 +63,7 @@ export default function TrustSection() {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <a
-            href="https://wa.me/6285119500054"
+            href="https://wa.me/6285122777253"
             className="inline-block bg-purple-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:bg-purple-800 transition"
           >
             Konsultasi Gratis Sekarang

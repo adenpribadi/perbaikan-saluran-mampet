@@ -19,7 +19,7 @@ export default function LayananPage() {
     "@id": "https://perbaikansaluranmampet.com/layanan",
     name: "Jasa Saluran Mampet Bandung",
     url: "https://perbaikansaluranmampet.com/layanan",
-    telephone: "+6285119500054",
+    telephone: "+6285122777253",
     image: "https://perbaikansaluranmampet.com/logo.png",
     description:
       "Layanan perbaikan WC mampet, pipa tersumbat, got mampet dan grease trap di Bandung. Profesional, cepat dan tanpa bongkar.",
@@ -222,7 +222,7 @@ export default function LayananPage() {
             </p>
 
             <a
-              href="https://wa.me/6285119500054"
+              href="https://wa.me/6285122777253"
               className="inline-block mt-8 bg-purple-700 text-white px-12 py-4 rounded-2xl font-bold shadow-lg hover:bg-purple-800 transition"
             >
               Hubungi Sekarang

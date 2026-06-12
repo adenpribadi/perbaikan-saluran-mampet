@@ -55,7 +55,7 @@ export default function RootLayout({
               "@id": "https://perbaikansaluranmampet.com",
               name: "Perbaikan Saluran Mampet Bandung",
               url: "https://perbaikansaluranmampet.com",
-              telephone: "085119500054",
+              telephone: "085122777253",
               priceRange: "Rp150.000 - Rp500.000",
               image: "https://perbaikansaluranmampet.com/logo.png",
               description:
@@ -95,7 +95,7 @@ export default function RootLayout({
                 },
               ],
               sameAs: [
-                "https://wa.me/6285119500054"
+                "https://wa.me/6285122777253"
               ],
             }),
           }}

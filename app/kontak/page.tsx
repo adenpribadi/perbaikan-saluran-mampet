@@ -22,7 +22,7 @@ export default function KontakPage() {
       "@id": "https://perbaikansaluranmampet.com",
       name: "Perbaikan Saluran Mampet Bandung",
       url: "https://perbaikansaluranmampet.com",
-      telephone: "+6285119500054",
+      telephone: "+6285122777253",
       image: "https://perbaikansaluranmampet.com/logo.png",
       priceRange: "$$",
       address: {
@@ -59,7 +59,7 @@ export default function KontakPage() {
       },
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+6285119500054",
+        telephone: "+6285122777253",
         contactType: "customer service",
         areaServed: "Bandung",
         availableLanguage: ["Indonesian"],
@@ -127,7 +127,7 @@ export default function KontakPage() {
                 <h3 className="font-semibold text-lg text-gray-900">
                   Telepon / WhatsApp
                 </h3>
-                <p>0851-1950-0054</p>
+                <p>0851-2277-7253</p>
               </div>
 
               <div>
@@ -139,7 +139,7 @@ export default function KontakPage() {
             </div>
 
             <a
-              href="https://wa.me/6285119500054"
+              href="https://wa.me/6285122777253"
               className="inline-block mt-10 bg-purple-700 text-white px-10 py-4 rounded-2xl font-bold shadow-lg hover:bg-purple-800 transition"
             >
               Chat WhatsApp Sekarang

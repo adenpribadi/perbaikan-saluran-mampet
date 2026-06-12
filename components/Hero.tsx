@@ -15,7 +15,7 @@ export default function Hero() {
             "@type": "Plumber",
             "name": "Medina Jaya Teknik - Perbaikan Saluran Mampet Bandung",
             "image": "https://perbaikansaluranmampet.com/hero.png",
-            "telephone": "085119500054",
+            "telephone": "085122777253",
             "url": "https://perbaikansaluranmampet.com",
             "priceRange": "Rp 200.000 - Rp 1.000.000",
             "address": {
@@ -54,7 +54,7 @@ export default function Hero() {
             ],
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "085119500054",
+              "telephone": "085122777253",
               "contactType": "customer service",
               "areaServed": "ID",
               "availableLanguage": ["Indonesian"]
@@ -139,7 +139,7 @@ export default function Hero() {
             {/* CALL TO ACTION */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="https://wa.me/6285119500054"
+                href="https://wa.me/6285122777253"
                 className="flex items-center justify-center gap-3 bg-yellow-400 text-black px-8 py-4 rounded-xl font-black text-lg shadow-lg hover:bg-yellow-500 transition-all hover:-translate-y-1 active:scale-95"
               >
                 <FaWhatsapp className="text-2xl" />

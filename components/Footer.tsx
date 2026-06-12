@@ -122,11 +122,11 @@ export default function Footer() {
           </p>
 
           <p className="mt-3 text-sm">
-            📞 0851-1950-0054
+            📞 0851-2277-7253
           </p>
 
           <a
-            href="https://wa.me/6285119500054"
+            href="https://wa.me/6285122777253"
             className="inline-block mt-4 bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition"
           >
             WhatsApp Sekarang

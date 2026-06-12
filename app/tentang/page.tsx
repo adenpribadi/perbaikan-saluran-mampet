@@ -109,7 +109,7 @@ export default function TentangPage() {
             </p>
 
             <a
-              href="https://wa.me/6285119500054"
+              href="https://wa.me/6285122777253"
               className="inline-block mt-6 bg-purple-700 text-white px-10 py-4 rounded-2xl font-bold hover:bg-purple-800 transition"
             >
               Hubungi Sekarang

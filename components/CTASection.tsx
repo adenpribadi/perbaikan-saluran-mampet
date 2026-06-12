@@ -30,10 +30,10 @@ export default function CTASection() {
         {/* CTA Button */}
         <div className="mt-10">
           <a
-            href="https://wa.me/6285119500054"
+            href="https://wa.me/6285122777253"
             className="inline-block bg-yellow-400 text-black px-10 py-4 rounded-2xl font-bold shadow-xl hover:scale-105 transition text-lg"
           >
-            WhatsApp 0851-1950-0054
+            WhatsApp 0851-2277-7253
           </a>
         </div>
 

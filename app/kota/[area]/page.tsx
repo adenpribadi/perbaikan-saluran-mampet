@@ -145,7 +145,7 @@ export default async function AreaPage(
             </p>
 
             <a
-              href="https://wa.me/6285119500054"
+              href="https://wa.me/6285122777253"
               className="inline-block mt-6 bg-purple-700 text-white px-12 py-4 rounded-2xl font-bold shadow-lg hover:bg-purple-800 transition"
             >
               Hubungi Sekarang
@@ -172,7 +172,7 @@ export default async function AreaPage(
                 name: "Perbaikan Saluran Mampet Bandung",
                 image: "https://perbaikansaluranmampet.com/logo.png",
                 url: "https://perbaikansaluranmampet.com",
-                telephone: "085119500054",
+                telephone: "085122777253",
                 priceRange: "Rp150.000 - Rp500.000",
                 address: {
                   "@type": "PostalAddress",
